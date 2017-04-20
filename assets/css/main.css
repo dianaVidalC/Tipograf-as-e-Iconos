@@ -1,0 +1,23 @@
+*{
+  margin:0;
+  padding: :0;
+}
+
+header{
+  width: 100%;
+  height: 4em;
+  padding: 1em;
+}
+
+#medium{
+  width: 2.5em;
+}
+
+#medium::before{
+  content: " ";
+  position: absolute;
+  width: 1em;
+  height: 3em;
+  color:#FFFFFF;
+  left:6em;
+}
