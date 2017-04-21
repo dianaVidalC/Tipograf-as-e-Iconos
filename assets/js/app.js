@@ -3,7 +3,9 @@ var body=document.getElementsByTagName("body")[0];
 var header=document.createElement("header");
 var divLeft=document.createElement("div");
 var divRight=document.createElement("div");
-var imagen=document.createElement("img");
+var logoMedium=document.createElement("img");
+var figureMedium=document.createElement("figure");
+var imagenLaboratoria=document.createElement("img");
 var iconoTwitter=document.createElement("span");
 var iconoFace=document.createElement("span");
 
@@ -28,10 +30,15 @@ var iconoFace2=document.createElement("span");
 var marcador=document.createElement("span");
 var next=document.createElement("span");
 
-imagen.setAttribute("src","assets/img/medium_logo.png")
-imagen.setAttribute("id","medium");
-divLeft.setAttribute("id","div-left");
+logoMedium.setAttribute("src","assets/img/medium_logo.png")
+logoMedium.setAttribute("id","medium");
+figureMedium.setAttribute("id","figure");
+imagenLaboratoria.setAttribute("src","assets/img/laboratoria.png")
+imagenLaboratoria.setAttribute("id","imagen-lab");
 
-divLeft.appendChild(imagen);
+figureMedium.appendChild(logoMedium);
+divLeft.appendChild(figureMedium);
+divLeft.appendChild(imagenLaboratoria);
+
 header.appendChild(divLeft);
 body.appendChild(header);
