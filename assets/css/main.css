@@ -3,21 +3,60 @@
   padding: :0;
 }
 
-footer,header{
-  background-color:#fff;
-  width: 80%;
-  margin:20px auto;
-  max-margin:1000px;
-}
-
 header{
-  width: 100%;
+  position: relative;
   height: 4em;
-  padding: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
+  box-sizing: border-box;
+  background-color:#fff;
+  margin:20px auto;
+  width: 80% auto;
 }
 
+footer{
+  position: relative;
+  height: 3.5em;
+  border-top: 1px solid rgba(159, 161, 167, 0.44);
+}
+
+footer #footer-right h4{
+  position: absolute;
+  right: 18.5em;
+  top:-0.2em;
+  color:#1C9963;
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 0.7em;
+}
+footer #footer-right p{
+  position: absolute;
+  left: 10.8em;
+  top:  1.2em;
+  font-size: 0.9em;
+  color:#000;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+footer::after{
+  content: " ";
+  position: absolute;
+  width: 0.1em;
+  height: 2.5em;
+  background:rgba(159, 161, 167, 0.44);
+  right: 17.5em;
+  top: 0.5em;
+}
+
+.contenido{
+  position: relative;
+  display: table-cell;
+  width: 60em;
+  height: 6em;
+}
 #medium{
   width: 2.5em;
+  cursor: pointer;
 }
 
 #figure{
@@ -28,7 +67,7 @@ header{
 #figure::before{
   content: " ";
   position: absolute;
-  width: 0.2em;
+  width: 0.1em;
   height: 2.2em;
   background:rgba(159, 161, 167, 0.44);
   left:3.8em;
@@ -38,4 +77,210 @@ header{
 #imagen-lab{
   width: 7em;
   margin-left: 3em;
+  cursor: pointer;
+}
+
+#div-left,#div-right{
+  display: inline-block;
+}
+
+
+#div-left{
+  position: absolute;
+  width: 20em;
+  height: 2.7em;
+  left: 2em;
+
+}
+#div-right{
+  position: absolute;
+  width:13em;
+  height: 2.7em;
+  right: 1.5em;
+}
+
+#icon-twitter{
+  position: relative;
+  left: 0.8em;
+  bottom: 0.3em;
+  color: #8F8F8F;
+  font-size: 1.8em;
+}
+
+#icon-twitter:hover{
+  color: #1C9963;
+  cursor: pointer;
+}
+
+#icon-facebook{
+  position: relative;
+  bottom: 0.4em;
+  left: 1.7em;
+  color: #8F8F8F;
+  font-size: 1.5em;
+}
+
+#icon-facebook:hover{
+  color: #1C9963;
+  cursor: pointer;
+}
+
+#edit{
+  position: absolute;
+  width: 3em;
+  border: none;
+  bottom:  0.8em;
+  color: #9B9B9B;
+}
+
+#search{
+  position: absolute;
+  bottom: 0.8em;
+  left: 2.5em;
+  cursor: pointer;
+  color: #9B9B9B;
+}
+
+#search:hover{
+  color: #1C9963;
+}
+#icon-5{
+  position: absolute;
+  top: 0.2em;
+  left: 2em;
+  font-size: 2em;
+  color:#1C9963;
+  border-radius: 150px;
+  -webkit-border-radius:150px;
+  cursor: pointer;
+}
+
+#fotoHeader{
+  position: absolute;
+  top: 0.5em;
+  left: 7em;
+  border-radius: 50%;
+  width: 2em;
+  cursor: pointer;
+}
+
+#logo-lab{
+  position: absolute;
+  width: 2em;
+  top: 0.5em;
+  left: 10em;
+  cursor: pointer;
+}
+
+#contenedor{
+  height: 32em;
+  width: 40em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#foto-contenedor{
+  border-radius: 50%;
+  padding: 0.5em;
+  width: 5em;
+  cursor: pointer;
+}
+
+.contenido h2{
+  position: absolute;
+  display: inline-block;
+  top: 1em;
+  color: #3E3F40;
+  font-size: 1em;
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+.parrafo{
+  position: absolute;
+  display: inline-block;
+  top: 3em;
+  color: #3E3F40;
+  font-size: 0.8em;
+  font-family: 'Roboto', sans-serif;
+}
+
+#parrafo2{
+  top: 5.5em;
+}
+
+#historia{
+  height: 25em;
+  padding-top: 1em;
+}
+
+#titulo{
+  font-size: 3em;
+  color: #3A3A3A;
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+#parrafo{
+  display: inline;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 0.5em;
+  line-height: 1.5em;
+  font-size: 1.5em;
+  color: #7E7E7E;
+}
+
+#historia span{
+  font-family: 'Roboto', sans-serif;
+  color: #7E7E7E;
+  font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+#footer-left{
+  position: absolute;
+  left: 10.2em;
+  top: 0.8em;
+  color: #767676;
+}
+
+#footer-right{
+  position: absolute;
+  width: 26em;
+  height: 2em;
+  right: 0;
+  top: 0.7em;
+}
+
+#icon-heart,#icon-bubble2{
+  margin-right: 1em;
+  margin-top: 0.2em;
+  font-size: 1.7em;
+  cursor: pointer;
+  color: #1C9963;
+}
+#icon-bubble2{
+  color: #767676;
+}
+
+ #icon-bubble2:hover{
+  color: #1C9963;
+}
+
+#icon-twitter2,#icon-facebook2{
+  margin-right: 0.7em;
+  font-size: 1.7em;
+  color: #767676;
+}
+
+#bookmark{
+  font-size: 1.5em;
+  color: #767676;
+}
+
+#icon-twitter2:hover,#icon-facebook2:hover, #bookmark:hover{
+  color: #1C9963;
+  cursor: pointer;
+}
+
+#cursivo{
+  font-style: italic;
 }
